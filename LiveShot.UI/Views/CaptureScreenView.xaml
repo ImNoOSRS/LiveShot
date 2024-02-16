@@ -115,10 +115,10 @@
                     Style="{StaticResource FirstLeftCanvasButton}" Name="UploadBtn">
                 <Path Style="{StaticResource CanvasPath}" Data="{StaticResource Upload}" />
             </Button>
-            <Button ToolTip="{x:Static properties:Resources.CaptureScreen_CanvasButtons_Share}"
-                    Style="{StaticResource CanvasButton}">
-                <Path Style="{StaticResource CanvasPath}" Data="{StaticResource Share}" />
-            </Button>
+            <!--<Button ToolTip="{x:Static properties:Resources.CaptureScreen_CanvasButtons_Share}"-->
+            <!--        Style="{StaticResource CanvasButton}">-->
+            <!--    <Path Style="{StaticResource CanvasPath}" Data="{StaticResource Share}" />-->
+            <!--</Button>-->
             <Button ToolTip="{x:Static properties:Resources.CaptureScreen_CanvasButtons_Google}"
                     Style="{StaticResource CanvasButton}" Name="GoogleBtn">
                 <Path Style="{StaticResource CanvasPath}" Data="{StaticResource Google}" />
