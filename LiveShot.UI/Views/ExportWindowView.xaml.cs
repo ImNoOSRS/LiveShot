@@ -73,7 +73,7 @@ namespace LiveShot.UI.Views
 
                     if (google)
                     {
-                        OpenUrl($"https://www.google.com/searchbyimage?image_url={LinkBox.Text}");
+                        OpenUrl($"https://lens.google.com/uploadbyurl?url={LinkBox.Text}");
                         Close();
                     }
                 }
