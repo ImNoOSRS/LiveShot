@@ -28,11 +28,13 @@ namespace LiveShot.UI.Views
         private void CopyBtnOnClick(object sender, RoutedEventArgs e)
         {
             Clipboard.SetText(LinkBox.Text);
+            Close();
         }
 
         private void OpenBtnOnClick(object sender, RoutedEventArgs e)
         {
             OpenUrl(LinkBox.Text);
+            Close();
         }
 
         private void OpenUrl(string url)

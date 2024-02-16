@@ -193,6 +193,7 @@ namespace LiveShot.UI.Views
                 case Key.C:
                     if (KeyBoardUtils.IsCtrlPressed)
                         CopyImage();
+                    Close();
                     break;
                 case Key.S:
                     if (KeyBoardUtils.IsCtrlPressed)
