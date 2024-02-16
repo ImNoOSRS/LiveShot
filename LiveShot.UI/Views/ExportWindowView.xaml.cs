@@ -76,6 +76,11 @@ namespace LiveShot.UI.Views
                         OpenUrl($"https://lens.google.com/uploadbyurl?url={LinkBox.Text}");
                         Close();
                     }
+                    else
+                    {
+                        Clipboard.SetText(LinkBox.Text);
+                        Close();
+                    }
                 }
                 catch (Exception e)
                 {
