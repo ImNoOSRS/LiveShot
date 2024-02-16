@@ -123,10 +123,10 @@
                     Style="{StaticResource CanvasButton}" Name="GoogleBtn">
                 <Path Style="{StaticResource CanvasPath}" Data="{StaticResource Google}" />
             </Button>
-            <Button ToolTip="{x:Static properties:Resources.CaptureScreen_CanvasButtons_Print}"
-                    Style="{StaticResource CanvasButton}">
-                <Path Style="{StaticResource CanvasPath}" Data="{StaticResource Print}" />
-            </Button>
+            <!--<Button ToolTip="{x:Static properties:Resources.CaptureScreen_CanvasButtons_Print}"-->
+            <!--        Style="{StaticResource CanvasButton}">-->
+            <!--    <Path Style="{StaticResource CanvasPath}" Data="{StaticResource Print}" />-->
+            <!--</Button>-->
             <Button ToolTip="{x:Static properties:Resources.CaptureScreen_CanvasButtons_Copy}"
                     Style="{StaticResource CanvasButton}" Name="CopyBtn">
                 <Path Style="{StaticResource CanvasPath}" Data="{StaticResource Copy}" />
