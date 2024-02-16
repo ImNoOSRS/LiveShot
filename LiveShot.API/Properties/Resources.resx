@@ -67,9 +67,6 @@ CaptureScreen.CanvasButtons.Stroke</value>
     <data name="CaptureScreen.CanvasButtons.Pencil" xml:space="preserve">
         <value>CaptureScreen.CanvasButtons.Pencil</value>
     </data>
-    <data name="CaptureScreen.Canvas.Tooltip" xml:space="preserve">
-        <value>CaptureScreen.Canvas.Tooltip</value>
-    </data>
     <data name="CaptureScreen.Title" xml:space="preserve">
         <value>CaptureScreen.Title</value>
     </data>

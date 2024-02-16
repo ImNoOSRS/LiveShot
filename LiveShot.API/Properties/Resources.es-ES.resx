@@ -66,9 +66,6 @@
     <data name="CaptureScreen.CanvasButtons.Undo" xml:space="preserve">
         <value>Deshacer</value>
     </data>
-    <data name="CaptureScreen.Canvas.Tooltip" xml:space="preserve">
-        <value>Selección</value>
-    </data>
     <data name="CaptureScreen.Title" xml:space="preserve">
         <value>Captura la pantalla</value>
     </data>

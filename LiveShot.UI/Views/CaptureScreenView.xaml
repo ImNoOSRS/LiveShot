@@ -23,7 +23,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    <canvas:SelectCanvas ToolTip="{x:Static properties:Resources.CaptureScreen_Canvas_Tooltip}"
+    <canvas:SelectCanvas
                          x:Name="SelectCanvas" 
                          SizePanel="{Binding ElementName=SizePanel}"
                          SizeLabel="{Binding ElementName=SizeLabel}"

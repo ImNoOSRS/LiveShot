@@ -61,15 +61,6 @@ namespace LiveShot.API.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Draw selection.
-        /// </summary>
-        public static string CaptureScreen_Canvas_Tooltip {
-            get {
-                return ResourceManager.GetString("CaptureScreen.Canvas.Tooltip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Arrow.
         /// </summary>
         public static string CaptureScreen_CanvasButtons_Arrow {
