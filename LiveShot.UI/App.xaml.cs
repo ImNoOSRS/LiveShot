@@ -42,7 +42,7 @@ namespace LiveShot.UI
 
             CaptureScreenView = ServiceProvider.GetRequiredService<CaptureScreenView>();
 
-            if (e.Args.Contains("--background"))
+            if (0 == 0 || e.Args.Contains("--background"))
             {
                 StartBackgroundApp();
 

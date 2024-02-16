@@ -86,7 +86,7 @@ namespace LiveShot.API.Background
             {
                 int keyCode = Marshal.ReadInt32(lParam);
 
-                if (wParam == (IntPtr)WM_KEYDOWN)
+                if (wParam == WM_KEYDOWN)
                 {
                     int generalKeyCode = int.Parse(_configuration.GetSection("Shortcuts")?["General"] ?? "0");
 

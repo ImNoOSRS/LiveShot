@@ -238,6 +238,7 @@ namespace LiveShot.UI.Views
 
         private void OpenExportWindow(bool google = false)
         {
+            //            if (_screenShot is null) return;
             if (_exportWindow is not null || _screenShot is null) return;
 
             var selection = SelectCanvas.Selection;
