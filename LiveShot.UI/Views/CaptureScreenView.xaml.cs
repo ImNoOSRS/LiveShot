@@ -33,24 +33,6 @@ namespace LiveShot.UI.Views
 
         private readonly List<ActionButton> _actionButtons;
 
-        public void AdjustFormToCoverAllScreens()
-        {
-            // Find the bounds that cover all screens
-            //var allScreens = Screen.AllScreens;
-            var allScreens = new List<Screen>() { Screen.PrimaryScreen };
-            int minX = allScreens.Min(screen => screen.Bounds.X * (int)screen.GetDpiPoint());
-            int minY = allScreens.Min(screen => screen.Bounds.Y * (int)screen.GetDpiPoint());
-            int maxX = allScreens.Max(screen => screen.Bounds.Right * (int)screen.GetDpiPoint());
-            int maxY = allScreens.Max(screen => screen.Bounds.Bottom * (int)screen.GetDpiPoint());
-
-            // Set the form properties
-            Top = minY;
-            Left = minX;
-            Width = maxX;
-            Height = maxY;
-            Topmost = true;
-        }
-
         public CaptureScreenView(
             IEventPipeline events,
             IServiceProvider services,
@@ -60,14 +42,17 @@ namespace LiveShot.UI.Views
         {
             InitializeComponent();
 
-            AdjustFormToCoverAllScreens();
-
             _events = events;
             _services = services;
             _liveShotService = liveShotService;
 
             _liveShotService.SelectCanvas = SelectCanvas;
             _liveShotService.DrawCanvas = DrawingCanvas;
+
+            Top = SystemParameters.VirtualScreenTop;
+            Left = SystemParameters.VirtualScreenLeft;
+            Width = SystemParameters.VirtualScreenWidth;
+            Height = SystemParameters.VirtualScreenHeight;
 
             SelectCanvas.Width = Width;
             SelectCanvas.Height = Height;

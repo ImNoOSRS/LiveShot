@@ -11,7 +11,7 @@
         Title="{x:Static properties:Resources.CaptureScreen_Title}" Height="450" Width="800"
         WindowStyle="None"
         ResizeMode="NoResize"
-        WindowState="Normal"
+        WindowState="Maximized"
         ShowInTaskbar="True"
         Icon="/icon.ico"
         WindowStartupLocation="CenterScreen">
